@@ -4,36 +4,16 @@
 {% block content %}
 
 <div class='col-sm-4 col-sm-offset-3'>
-<h1>Optimize best Route</h1>
-<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
-{{ form | crispy }}
-</form>
-</div>
-
-<div class='col-sm-4 col-sm-offset-3'>
-<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
-{{ form | crispy }}
-</form>
-</div>
-
-<div class='col-sm-4 col-sm-offset-3'>
-<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
-{{ form | crispy }}
-</form>
-</div>
-
-<div class='col-sm-4 col-sm-offset-3'>
-<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
-{{ form | crispy }}
-</form>
-</div>
-
-<div class='col-sm-4 col-sm-offset-3'>
-<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+<form method='POST' action='/city_details' enctype='multipart/form-data'>{% csrf_token %}
 {{ form | crispy }}<br>
-<input type='submit' class='btn btn-success' value='Submit'/>
 </form>
 </div>
 
+<div class='col-sm-4 col-sm-offset-3'>
+<form method='POST' action='/city_details' enctype='multipart/form-data'>{% csrf_token %}
+{{ form | crispy }}<br>
+<button class="btn btn-success" type="submit">Submit</button>
+</form>
+</div>
 
 {% endblock %}
